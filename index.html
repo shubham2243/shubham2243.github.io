@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Tarafder | 3D Vision Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;700&family=Outfit:wght@100;300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- <div class="instruction">INTERACT • GENERATE CUBE/SPHERE/TORUS • SCROLL</div> -->
+
+    <nav class="interactive">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Connect</a>
+    </nav>
+    <div id="canvas-container"></div>
+
+    <main>
+        <div id="name-container">
+            <h1 id="name-display">Shubham Tarafder</h1>
+        </div>
+        <!-- <p class="tagline">3D RECONSTRUCTION • COMPUTER VISION • SPATIAL RESEARCH</p> -->
+
+        <div id="latest-tab" class="interactive">
+            <h3>Latest</h3>
+            <div class="latest-item">
+                <span>PROJECT</span>
+                Assamese Artifacts 3D Generation
+            </div>
+            <div class="latest-item">
+                <span>RESEARCH</span>
+                Oral Cancer Resizing Framework
+            </div>
+            <div class="latest-item">
+                <span>MILESTONE</span>
+                IndiaAI Fellowship Awardee
+            </div>
+        </div>
+
+        <div id="cli-shell">
+            <div id="cli-history">
+                <div class="cli-line bot-msg">Ask me about my research or generate 3D volumes.</div>
+            </div>
+            <div id="cli-input-area">
+                <span id="cli-prompt">></span>
+                <input type="text" id="cli-input" placeholder="Ask me..." autocomplete="off">
+            </div>
+        </div>
+    </main>
+
+    <div id="content" class="interactive">
+        <section id="about">
+            <div class="about-text">
+                <h2>About</h2>
+                <p>I am an IndiaAI Fellow and B.Tech CSE scholar at Assam Don Bosco University (CGPA 8.66), specialized
+                    in the intersection of Computer Vision and 3D Scene Representation. My research focus lies in
+                    medical imaging diagnostics and the recovery of dense 3D volumes from sparse perspectives.</p>
+                <p style="margin-top: 1rem;">With roots in institutions like Tokyo Tech and a background in
+                    high-performance graphics, I build visualization tools that bridge the gap between flat pixels and
+                    immersive spatial reality. I am currently exploring differentiable rendering and neural scene
+                    representation for cultural preservation and medical diagnostics.</p>
+                <div class="origin-badge">
+                    <img src="flag.png" alt="India Flag">
+                    <span>भारत</span>
+                </div>
+            </div>
+            <div class="profile-container">
+                <img src="shub.jpeg" alt="Shubham Tarafder Profile">
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="resume-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+                <h3>B.Tech in Computer Science and Engineering</h3>
+                <p class="meta">Assam Don Bosco University | Guwahati, Assam | Aug 2022 – Jul 2026</p>
+                <p>CGPA: 8.66 | SGPA: 9.72 (8th Semester). Active leadership as ML Co-Lead at GDSC and President of the
+                    Coding Club.</p>
+            </div>
+            <div class="resume-item">
+                <div class="timeline-dot"></div>
+                <h3>High School (Physics, Chemistry, Mathematics)</h3>
+                <p class="meta">Kendriya Vidyalaya A.F.S, Borjhar | Jul 2020 – Mar 2022</p>
+                <p>Percentage: 73.7%. Strong foundation in computational mathematics and physics.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="resume-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+                <h3>Project Trainee</h3>
+                <p class="meta">HDFC Bank, Tech and Digital Dept | Jan 2026 – Present</p>
+                <p>Architecting a Mutual Fund Redemption Optimizer Engine. Focus on algorithmic efficiency to improve
+                    tax health and portfolio optimization.</p>
+            </div>
+            <div class="resume-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+                <h3>Research Intern</h3>
+                <p class="meta">Biomedical Intelligence Unit, ADBU | Jun 2025 – Dec 2025</p>
+                <p>Developed a semantically annotated histopathological OSCC image dataset. Performed rigorous
+                    comparative analysis of SOTA deep learning models for automated cancer detection.</p>
+            </div>
+            <div class="resume-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+                <h3>President</h3>
+                <p class="meta">Coding Club, ADBU | Oct 2024 – Jan 2026</p>
+                <p>Spearheaded technical events, hackathons, and managed club initiatives to foster a high-performance
+                    developer culture.</p>
+            </div>
+            <div class="resume-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+                <h3>Research Intern</h3>
+                <p class="meta">IASST, Guwahati | May 2024 – Aug 2024</p>
+                <p>Engineered a novel resizing framework for oral cancer images captured via smartphones, facilitating
+                    high-accuracy remote diagnostics.</p>
+            </div>
+            <div class="resume-item">
+                <div class="timeline-dot"></div>
+                <h3>Machine Learning Co-Lead</h3>
+                <p class="meta">GDSC, Assam Don Bosco University | Oct 2023 – Jan 2026</p>
+                <p>Mentored juniors in model training, evaluation, and deployment strategies across diverse vision-based
+                    projects.</p>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Explainable AI for Oral Lesion Images</h3>
+                    <p class="meta">Paper Accepted-CVIP 2025</p>
+                    <p>Lightweight YOLO-Based Classification for smartphone-captured diagnostic data.</p>
+                    <div class="status-badge status-accepted">Accepted</div>
+                </div>
+                <div class="project-card">
+                    <h3>Automated OSCC Segmentation</h3>
+                    <p class="meta">Paper Accepted-ICADT 2025</p>
+                    <p>Binary segmentation of H and E-stained histopathology slides using YOLO-based models.</p>
+                    <div class="status-badge status-accepted">Accepted</div>
+                </div>
+                <div class="project-card">
+                    <h3>Comprehensive Resizing Methods</h3>
+                    <p class="meta">Research Paper</p>
+                    <p>Evaluating diagnostic fidelity in smartphone-captured intraoral images.</p>
+                    <div class="status-badge status-review">Under Review / Communicated</div>
+                </div>
+                <div class="project-card">
+                    <h3>3D Recon of Cultural Artifacts</h3>
+                    <p class="meta">Neural Scene Representation</p>
+                    <p>Visualization and reconstruction of Assamese artifacts using differentiable rendering.</p>
+                    <div class="status-badge status-review">In Writing Phase / Communicated</div>
+                </div>
+                <div class="project-card">
+                    <h3>Diagnostic Semantic Segmentation</h3>
+                    <p class="meta">Computer-Aided System</p>
+                    <p>Automated OSCC segmentation from high-resolution stained slides.</p>
+                    <div class="status-badge status-review">Communicated</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <span>Graphics & 3D:</span> WebGL, Novel View Synthesis, 3D Reconstruction, Gaussian Splatting
+                    (3DGS), Editable 3D Reconstruction
+                </div>
+                <div class="skill-category">
+                    <span>ML/CV Frameworks:</span> PyTorch, PyTorch3D, TensorFlow, OpenCV, Albumentations, Ultralytics,
+                    NumPy, Scikit-learn
+                </div>
+                <div class="skill-category">
+                    <span>Languages:</span> Python, C, Java, Assembly, CUDA, Taichi Lang, JavaScript(React)
+                </div>
+                <div class="skill-category">
+                    <span>Tools & Engineering:</span> Git, Linux, MySQL, LaTeX, PyTest, CI/CD Pipelines, Postman, Podman
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Connect</h2>
+            <p style="opacity: 0.5; font-size: 0.8rem;">
+                <a href="mailto:starafder20043@gmail.com"
+                    style="color: inherit; text-decoration: none;">starafder20043@gmail.com</a> •
+                <a href="https://www.linkedin.com/in/shubhamtarafder/" target="_blank"
+                    style="color: inherit; text-decoration: none;">LinkedIn</a> •
+                <a href="https://github.com/shubham2243" target="_blank"
+                    style="color: inherit; text-decoration: none;">GitHub</a>
+            </p>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
