@@ -281,3 +281,24 @@ function animate() {
 const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.1 });
 document.querySelectorAll('section').forEach(s => obs.observe(s));
 init(); animate();
+
+// -----------------------------------------------------------------------------
+// 4. Real-Time Visitor Counter
+// -----------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+    // using counterapi.dev to keep a real-time count without backend
+    fetch('https://api.counterapi.dev/v1/shubham2243/portfolio/up')
+        .then(response => response.json())
+        .then(data => {
+            const countDisplay = document.getElementById('visitor-count-text');
+            if (countDisplay && data.count) {
+                const formattedCount = new Intl.NumberFormat('en-US').format(data.count);
+                countDisplay.innerHTML = `<span style="color: var(--text-color); font-weight: bold; font-family: var(--font-cli);">${formattedCount}</span> REAL-TIME VISITORS`;
+            }
+        })
+        .catch(err => {
+            console.error('Error fetching visitor count:', err);
+            const countDisplay = document.getElementById('visitor-count-text');
+            if (countDisplay) countDisplay.innerText = 'VISITOR COUNT UNAVAILABLE';
+        });
+});
