@@ -190,7 +190,7 @@ function init() {
     geo.setAttribute('color', new THREE.BufferAttribute(col, 3));
     geo.setAttribute('targetPosition', new THREE.BufferAttribute(tp, 3));
 
-    const mat = new THREE.PointsMaterial({ size: 0.3, vertexColors: true, transparent: true, opacity: 0.5, blending: THREE.AdditiveBlending });
+    const mat = new THREE.PointsMaterial({ size: 0.03, vertexColors: true, transparent: true, opacity: 0.5, blending: THREE.AdditiveBlending });
     particleSystem = new THREE.Points(geo, mat);
     scene.add(particleSystem);
 
