@@ -61,7 +61,7 @@ function addLog(text, type = 'bot') {
 function processCommand(cmd) {
     const input = cmd.toLowerCase().trim();
     if (input === 'cls' || input === 'clear') {
-        cliHistory.innerHTML = '<div class="cli-line bot-msg">Ask me about my research or generate 3D volumes.</div>';
+        cliHistory.innerHTML = '<div class="cli-line bot-msg">Ask about my work, research, publications, or projects. Type help for commands.</div>';
         return;
     }
 
