@@ -109,36 +109,72 @@ h1.hindi {
     margin-bottom: 0.2rem;
 }
 
-/* Animated geometry status */
-#shape-status {
+/* Futuristic CLI / Chatbox Container */
+#cli-shell {
     position: absolute;
-    left: 4rem;
     bottom: 4rem;
+    left: 4rem;
+    width: 500px;
+    max-height: 400px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--detail-color);
     display: flex;
     flex-direction: column;
-    gap: 0.45rem;
-    padding-left: 1rem;
-    border-left: 1px solid rgba(255, 255, 255, 0.22);
-    pointer-events: none;
-    z-index: 4;
+    pointer-events: auto;
+    transition: all 0.5s ease;
 }
 
-.shape-status-label {
-    color: #777;
-    font-size: 0.55rem;
-    letter-spacing: 0.22rem;
+#cli-history {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
-#shape-name {
-    color: #ddd;
+#cli-history::-webkit-scrollbar {
+    width: 2px;
+}
+
+#cli-history::-webkit-scrollbar-thumb {
+    background: var(--detail-color);
+}
+
+.cli-line {
+    margin-bottom: 0.8rem;
+    opacity: 0.9;
+}
+
+.user-msg {
+    color: var(--accent-color);
+}
+
+.bot-msg {
+    color: #888;
+}
+
+#cli-input-area {
+    display: flex;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    align-items: center;
+}
+
+#cli-prompt {
+    color: var(--detail-color);
+    margin-right: 0.7rem;
     font-size: 0.9rem;
-    letter-spacing: 0.25rem;
 }
 
-.shape-status-hint {
-    color: #666;
-    font-size: 0.58rem;
-    letter-spacing: 0.06rem;
+#cli-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--accent-color);
+    outline: none;
+    font-family: var(--font-cli);
+    font-size: 0.9rem;
 }
 
 nav {
@@ -470,9 +506,13 @@ p {
         margin-top: 1rem;
     }
 
-    #shape-status {
-        left: 1.5rem;
-        bottom: 1.75rem;
+    #cli-shell {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: min(100%, 500px);
+        margin-top: 1.5rem;
+        min-height: 130px;
     }
 
     #content {
@@ -515,11 +555,6 @@ p {
 
     #content {
         padding: 0 1rem;
-    }
-
-    #shape-status {
-        left: 1rem;
-        bottom: 1.25rem;
     }
 
     .skill-category {
