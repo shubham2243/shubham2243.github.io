@@ -459,3 +459,106 @@ p {
         box-shadow: 0 0 0 0 rgba(240, 240, 240, 0);
     }
 }
+
+/* Portfolio layout refinements */
+.tagline {
+    display: block;
+    opacity: 0.48;
+    line-height: 1.7;
+}
+
+.project-card a {
+    color: #d0d0d0;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+    nav {
+        top: 1.25rem;
+        right: 1.25rem;
+        left: 1.25rem;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem 1.4rem;
+    }
+
+    nav a {
+        font-size: 0.62rem;
+    }
+
+    main {
+        min-height: 100vh;
+        height: auto;
+        padding: 7rem 1.5rem 2rem;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    #latest-tab {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: min(100%, 340px);
+        margin-top: 1rem;
+    }
+
+    #cli-shell {
+        position: relative;
+        left: auto;
+        bottom: auto;
+        width: min(100%, 500px);
+        margin-top: 1.5rem;
+        min-height: 130px;
+    }
+
+    #content {
+        padding: 0 1.5rem;
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+
+    .profile-container {
+        width: 160px;
+        height: 190px;
+    }
+
+    .project-grid {
+        gap: 2.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        gap: 0.8rem 1rem;
+    }
+
+    nav a {
+        font-size: 0.55rem;
+        letter-spacing: 0.08rem;
+    }
+
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #content {
+        padding: 0 1rem;
+    }
+
+    .skill-category {
+        font-size: 0.85rem;
+        line-height: 1.7;
+    }
+}
