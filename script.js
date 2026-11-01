@@ -38,16 +38,15 @@ setInterval(async () => {
 // -----------------------------------------------------------------------------
 
 const KB = {
-    "research": "My research spans medical image analysis and 3D reconstruction. Notable work includes developing novel resizing frameworks for oral cancer images, AI-powered segmentation of histopathological OSCC images, and 2D to 3D generation of Assamese cultural artifacts.",
-    "education": "I'm pursuing a B.Tech in CSE at Assam Don Bosco University (2022-2026), maintaining a strong CGPA of 8.66. I've also clearing the GATE examination with a focus on CV and Graphics.",
-    "experience": "I've served as a Machine Learning Co-Lead at GDSC ADBU, Research Intern at IASST and the Biomedical Intelligence Unit, and Project Trainee at HDFC Bank developing a Mutual Fund Redemption Optimizer.",
-    "projects": "I'm currently working on '2D to 3D Generation of Assamese Cultural Artifacts' and 'Editable 3D Reconstruction for Interior Spaces' using Gaussian Splatting and VGGT-X.",
-    "publications": "I have several papers accepted or communicated, including work on smartphone-captured intraoral images for CVIP 2025 and YOLO-based segmentation for ICADT 2025.",
-    "skills": "Technically, I'm proficient in Python, C, WebGL, CUDA, and Taichi Lang. I use frameworks like PyTorch, PyTorch3D, TensorFlow, and OpenCV for deep learning and 3D tasks.",
-    "awards": "I am an IndiaAI Fellowship awardee and have won first place in several AI exhibitions, web design contests, and science quizzes.",
-    "who": "I am Shubham Tarafder, an IndiaAI Fellow and researcher focused on bridging Computer Vision and 3D scene representation.",
-    "identity": "I speak English, Hindi, Bengali, and Assamese fluently, and I'm based in Guwahati, Assam.",
-    "contact": "You can connect with me via LinkedIn, GitHub, or email at starafder20043@gmail.com."
+    "research": "My research focuses on computer vision, medical image analysis, computational pathology, and 3D scene reconstruction. My work includes OSCC segmentation in H&E-stained histopathology images, smartphone-based oral lesion image processing, and neural reconstruction of Assamese cultural artefacts.",
+    "education": "I graduated with a B.Tech in Computer Science and Engineering from Assam Don Bosco University in 2026.",
+    "experience": "I currently work as a Member Technical at ADP in Hyderabad, contributing to WFN / ADP Assist initiatives involving agentic AI, LLM-powered smart-assist systems, and production software engineering. Earlier, I worked on research and development at the Biomedical Intelligence Unit, Assam Don Bosco University, and interned at IASST, Guwahati.",
+    "projects": "Selected projects include OSCC histopathology segmentation, smartphone-captured oral lesion image processing, and Clay to Cloud: neural scene representations and 3D reconstruction of Assamese terracotta artefacts using photogrammetry and 3D Gaussian Splatting.",
+    "publications": "My published journal article is 'Automated Binary Segmentation of Oral Squamous Cell Carcinoma in H&E-Stained Histopathology Slides Using YOLO-Based Deep Learning Models' in SN Computer Science (Springer Nature, 2026). DOI: 10.1007/s42979-026-05038-w. Two additional manuscripts are under peer review.",
+    "skills": "My technical toolkit includes Python, Java, C, SQL, PyTorch, TensorFlow, OpenCV, Ultralytics, YOLO, U-Net, OpenSlide, COLMAP, Nerfstudio, and 3D Gaussian Splatting. I am also exploring LLM applications and agentic AI.",
+    "awards": "I was selected for the IndiaAI UG Fellowship 2026 under the IndiaAI Mission for a project on neural scene representation for Assamese cultural heritage.",
+    "who": "I am Shubham Tarafder, an AI and computer vision engineer at ADP, with research experience in medical imaging, computational pathology, and 3D computer vision.",
+    "contact": "You can reach me at starafder20043@gmail.com or connect through LinkedIn, GitHub, and ORCID."
 };
 
 function addLog(text, type = 'bot') {
@@ -94,8 +93,6 @@ function processCommand(cmd) {
     // Help
     if (input === 'help' || input === '-h') {
         addLog("Available Commands:");
-        addLog(" - generate [cube/sphere/torus/cylinder/cone/plane]");
-        addLog(" - reset : Revert particles to cloud state");
         addLog(" - cls/clear : Clear terminal history");
         addLog(" - help/-h : Show this list");
         addLog(" - connect : Scroll to contact section");
